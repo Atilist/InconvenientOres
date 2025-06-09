@@ -19,7 +19,9 @@
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "io.github.atilist.inconvenientores.events.init.InitListener"
+      "io.github.atilist.inconvenientores.events.init.InitListener",
+      "io.github.atilist.inconvenientores.events.init.BlockListener",
+      "io.github.atilist.inconvenientores.events.init.TextureListener"
     ],
     "stationapi:event_bus_client": [
     ],
