@@ -16,6 +16,7 @@ public class TextureListener {
     public void registerTextures(TextureRegisterEvent event) {
         BlockListener.explosiveOre.setTexture(getTextureIndex("block/explosiveOre"));
         BlockListener.heavenlyOre.setTexture(getTextureIndex("block/heavenlyOre"));
+        BlockListener.rotatingOre.setTexture(getTextureIndex("block/rotatingOre"));
     }
 
     private int getTextureIndex(String s) {

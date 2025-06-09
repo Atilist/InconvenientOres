@@ -1,3 +1,4 @@
 # @ is a shorthand for the current mod id, which is inconvenientores. E.g: tile.@.redclay.name
 tile.@.explosive_ore.name=Explosive Ore
 tile.@.heavenly_ore.name=Heavenly Ore
+tile.@.rotating_ore.name=Rotating Ore
