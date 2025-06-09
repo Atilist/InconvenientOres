@@ -19,42 +19,42 @@ public class ChunkListener {
         Random random = event.random;
         World world = event.world;
 
-        {
+        for (int i = 0; i < 4; i++) {
             int x = event.x + random.nextInt(16) + 8;
             int y = random.nextInt(128);
             int z = event.z + random.nextInt(16) + 8;
             (new OreFeature(BlockListener.explosiveOre.id, 8)).generate(world, random, x, y, z);
         }
 
-        {
+        for (int i = 0; i < 4; i++) {
             int x = event.x + random.nextInt(16) + 8;
             int y = random.nextInt(128);
             int z = event.z + random.nextInt(16) + 8;
             (new OreFeature(BlockListener.heavenlyOre.id, 8)).generate(world, random, x, y, z);
         }
 
-        {
+        for (int i = 0; i < 4; i++) {
             int x = event.x + random.nextInt(16) + 8;
             int y = random.nextInt(128);
             int z = event.z + random.nextInt(16) + 8;
             (new OreFeature(BlockListener.rotatingOre.id, 8)).generate(world, random, x, y, z);
         }
 
-        {
+        for (int i = 0; i < 4; i++) {
             int x = event.x + random.nextInt(16) + 8;
             int y = random.nextInt(128);
             int z = event.z + random.nextInt(16) + 8;
             (new OreFeature(BlockListener.loudOre.id, 8)).generate(world, random, x, y, z);
         }
 
-        {
+        for (int i = 0; i < 4; i++) {
             int x = event.x + random.nextInt(16) + 8;
             int y = random.nextInt(128);
             int z = event.z + random.nextInt(16) + 8;
             (new OreFeature(BlockListener.woodenStone.id, 8)).generate(world, random, x, y, z);
         }
 
-        {
+        for (int i = 0; i < 4; i++) {
             int x = event.x + random.nextInt(16) + 8;
             int y = random.nextInt(128);
             int z = event.z + random.nextInt(16) + 8;
