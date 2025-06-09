@@ -1,0 +1,29 @@
+package io.github.atilist.inconvenientores.events.init;
+
+import net.mine_diver.unsafeevents.listener.EventListener;
+import net.minecraft.world.World;
+import net.minecraft.world.dimension.OverworldDimension;
+import net.minecraft.world.gen.feature.OreFeature;
+import net.modificationstation.stationapi.api.event.world.gen.WorldGenEvent;
+
+import java.util.Random;
+
+public class ChunkListener {
+
+    @EventListener
+    public void populate(WorldGenEvent.ChunkDecoration event) {
+        if (event.world.dimension instanceof OverworldDimension) populateOverworld(event);
+    }
+
+    public void populateOverworld(WorldGenEvent.ChunkDecoration event) {
+        Random random = event.random;
+        World world = event.world;
+
+        {
+            int x = event.x + random.nextInt(16) + 8;
+            int y = random.nextInt(128);
+            int z = event.z + random.nextInt(16) + 8;
+            (new OreFeature(BlockListener.explosiveOre.id, 8)).generate(world, random, x, y, z);
+        }
+    }
+}
