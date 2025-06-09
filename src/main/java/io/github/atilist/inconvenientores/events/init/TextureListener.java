@@ -19,6 +19,7 @@ public class TextureListener {
         BlockListener.rotatingOre.setTexture(getTextureIndex("block/rotatingOre"));
         BlockListener.loudOre.setTexture(getTextureIndex("block/loudOre"));
         BlockListener.woodenStone.setTexture(getTextureIndex("block/woodenStone"));
+        BlockListener.windBag.setTexture(getTextureIndex("block/windBag"));
     }
 
     private int getTextureIndex(String s) {

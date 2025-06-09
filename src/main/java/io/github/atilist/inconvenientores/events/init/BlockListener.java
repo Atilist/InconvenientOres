@@ -17,6 +17,7 @@ public class BlockListener {
     public static RotatingOreBlock rotatingOre;
     public static LoudOreBlock loudOre;
     public static WoodenStoneBlock woodenStone;
+    public static WindBagBlock windBag;
 
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
@@ -25,5 +26,6 @@ public class BlockListener {
         rotatingOre = new RotatingOreBlock(Identifier.of(NAMESPACE, "rotating_ore"), Material.STONE);
         loudOre = new LoudOreBlock(Identifier.of(NAMESPACE, "loud_ore"), Material.STONE);
         woodenStone = new WoodenStoneBlock(Identifier.of(NAMESPACE, "wooden_stone"), Material.STONE);
+        windBag = new WindBagBlock(Identifier.of(NAMESPACE, "wind_bag"), Material.STONE);
     }
 }
