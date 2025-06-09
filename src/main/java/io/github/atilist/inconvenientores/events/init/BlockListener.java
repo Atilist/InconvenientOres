@@ -1,9 +1,6 @@
 package io.github.atilist.inconvenientores.events.init;
 
-import io.github.atilist.inconvenientores.block.ExplosiveOreBlock;
-import io.github.atilist.inconvenientores.block.HeavenlyOreBlock;
-import io.github.atilist.inconvenientores.block.LoudOreBlock;
-import io.github.atilist.inconvenientores.block.RotatingOreBlock;
+import io.github.atilist.inconvenientores.block.*;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.block.material.Material;
 import net.modificationstation.stationapi.api.event.registry.BlockRegistryEvent;
@@ -19,6 +16,7 @@ public class BlockListener {
     public static HeavenlyOreBlock heavenlyOre;
     public static RotatingOreBlock rotatingOre;
     public static LoudOreBlock loudOre;
+    public static WoodenStoneBlock woodenStone;
 
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
@@ -26,5 +24,6 @@ public class BlockListener {
         heavenlyOre = new HeavenlyOreBlock(Identifier.of(NAMESPACE, "heavenly_ore"), Material.STONE);
         rotatingOre = new RotatingOreBlock(Identifier.of(NAMESPACE, "rotating_ore"), Material.STONE);
         loudOre = new LoudOreBlock(Identifier.of(NAMESPACE, "loud_ore"), Material.STONE);
+        woodenStone = new WoodenStoneBlock(Identifier.of(NAMESPACE, "wooden_stone"), Material.STONE);
     }
 }
