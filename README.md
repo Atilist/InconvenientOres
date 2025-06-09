@@ -1,12 +1,11 @@
-# Fabric Example Mod with StationAPI and BIN Mappings for beta 1.7.3 server + client
+# Inconvenient Ores
 
-## Setup
+## About the mod
+Inconvenient Ores adds new ores to the game with the one and only purpose to be inconvenient and dangerous but in a funny way. This can be considered a "fun mod" and is therefore intended for less serious playthroughs but can be added to any situation.
 
-Run the `_setup/setupMod` task and give it the inputs it needs. **This is a required step.**
+## Relevant section for developers
 
-[See the StationAPI wiki.](https://github.com/ModificationStation/StationAPI/wiki)
-
-## Common Issues
+### Common Issues
 
 **My project isn't building after updating babric loom/stationapi!**  
 Run a gradle task with `--refresh-dependencies` as an argument, and this should be fixed. If not, try deleting your project's `.gradle` folder, and try again.
@@ -23,6 +22,6 @@ Open your `server.properties` and set `online-mode` to `false`.
 
 [Here for more issues.](https://github.com/calmilamsy/BIN-fabric-example-mod#common-issues)
 
-## License
+### License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod is available under the MIT license. Feel free to learn from it and incorporate it in your own projects as long as you credit the author.
