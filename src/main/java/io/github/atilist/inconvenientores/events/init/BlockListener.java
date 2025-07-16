@@ -18,6 +18,8 @@ public class BlockListener {
     public static LoudOreBlock loudOre;
     public static WoodenStoneBlock woodenStone;
     public static WindBagBlock windBag;
+    public static MilkOreBlock milkOre;
+    public static FakeDiamondOreBlock fakeDiamondOre;
 
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
@@ -27,5 +29,7 @@ public class BlockListener {
         loudOre = new LoudOreBlock(Identifier.of(NAMESPACE, "loud_ore"), Material.STONE);
         woodenStone = new WoodenStoneBlock(Identifier.of(NAMESPACE, "wooden_stone"), Material.STONE);
         windBag = new WindBagBlock(Identifier.of(NAMESPACE, "wind_bag"), Material.STONE);
+        milkOre = new MilkOreBlock(Identifier.of(NAMESPACE, "milk_ore"), Material.STONE);
+        fakeDiamondOre = new FakeDiamondOreBlock(Identifier.of(NAMESPACE, "fake_diamond_ore"), Material.STONE);
     }
 }

@@ -21,6 +21,7 @@
     "stationapi:event_bus": [
       "io.github.atilist.inconvenientores.events.init.InitListener",
       "io.github.atilist.inconvenientores.events.init.BlockListener",
+      "io.github.atilist.inconvenientores.events.init.ItemListener",
       "io.github.atilist.inconvenientores.events.init.TextureListener",
       "io.github.atilist.inconvenientores.events.init.ChunkListener"
     ],

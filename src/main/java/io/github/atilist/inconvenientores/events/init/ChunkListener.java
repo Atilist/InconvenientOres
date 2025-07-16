@@ -60,5 +60,19 @@ public class ChunkListener {
             int z = event.z + random.nextInt(16) + 8;
             (new OreFeature(BlockListener.windBag.id, 8)).generate(world, random, x, y, z);
         }
+
+        for (int i = 0; i < 4; i++) {
+            int x = event.x + random.nextInt(16) + 8;
+            int y = random.nextInt(128);
+            int z = event.z + random.nextInt(16) + 8;
+            (new OreFeature(BlockListener.milkOre.id, 8)).generate(world, random, x, y, z);
+        }
+
+        for (int i = 0; i < 4; i++) {
+            int x = event.x + random.nextInt(16) + 8;
+            int y = random.nextInt(128);
+            int z = event.z + random.nextInt(16) + 8;
+            (new OreFeature(BlockListener.fakeDiamondOre.id, 8)).generate(world, random, x, y, z);
+        }
     }
 }

@@ -20,6 +20,10 @@ public class TextureListener {
         BlockListener.loudOre.setTexture(getTextureIndex("block/loudOre"));
         BlockListener.woodenStone.setTexture(getTextureIndex("block/woodenStone"));
         BlockListener.windBag.setTexture(getTextureIndex("block/windBag"));
+        BlockListener.milkOre.setTexture(getTextureIndex("block/milkOre"));
+        BlockListener.fakeDiamondOre.setTexture(getTextureIndex("block/fakeDiamondOre"));
+
+        ItemListener.fakeDiamond.setTexture(Identifier.of(NAMESPACE, "item/fakeDiamond"));
     }
 
     private int getTextureIndex(String s) {

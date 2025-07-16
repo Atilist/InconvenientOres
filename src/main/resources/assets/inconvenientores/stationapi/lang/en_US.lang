@@ -5,3 +5,7 @@ tile.@.rotating_ore.name=Rotating Ore
 tile.@.loud_ore.name=Loud Ore
 tile.@.wooden_stone.name=Wooden Stone
 tile.@.wind_bag.name=Wind Bag
+tile.@.milk_ore.name=Milk Ore
+tile.@.fake_diamond_ore.name=Fake Diamond Ore
+
+item.@.fake_diamond.name=Fake Diamond
