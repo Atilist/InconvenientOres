@@ -10,6 +10,7 @@ import net.modificationstation.stationapi.api.util.Namespace;
 public class ItemListener {
 
     public static LazyItemTemplate fakeDiamond;
+    public static LazyItemTemplate garbage;
 
     @Entrypoint.Namespace
     public static Namespace NAMESPACE;
@@ -17,6 +18,7 @@ public class ItemListener {
     @EventListener
     public void registerItems(ItemRegistryEvent event) {
         fakeDiamond = new LazyItemTemplate(Identifier.of(NAMESPACE, "fake_diamond"));
+        garbage = new LazyItemTemplate(Identifier.of(NAMESPACE, "garbage"));
 
         BlockListener.fakeDiamondOre.specifyCustomDrop(NAMESPACE.id("fake_diamond"));
     }

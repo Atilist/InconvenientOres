@@ -7,5 +7,7 @@ tile.@.wooden_stone.name=Wooden Stone
 tile.@.wind_bag.name=Wind Bag
 tile.@.milk_ore.name=Milk Ore
 tile.@.fake_diamond_ore.name=Fake Diamond Ore
+tile.@.garbage_ore.name=Garbage Ore
 
 item.@.fake_diamond.name=Fake Diamond
+item.@.garbage.name=Garbage

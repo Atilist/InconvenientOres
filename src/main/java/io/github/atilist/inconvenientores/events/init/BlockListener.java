@@ -20,6 +20,7 @@ public class BlockListener {
     public static WindBagBlock windBag;
     public static MilkOreBlock milkOre;
     public static FakeDiamondOreBlock fakeDiamondOre;
+    public static GarbageOreBlock garbageOre;
 
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
@@ -31,5 +32,6 @@ public class BlockListener {
         windBag = new WindBagBlock(Identifier.of(NAMESPACE, "wind_bag"), Material.STONE);
         milkOre = new MilkOreBlock(Identifier.of(NAMESPACE, "milk_ore"), Material.STONE);
         fakeDiamondOre = new FakeDiamondOreBlock(Identifier.of(NAMESPACE, "fake_diamond_ore"), Material.STONE);
+        garbageOre = new GarbageOreBlock(Identifier.of(NAMESPACE, "garbage_ore"), Material.STONE);
     }
 }

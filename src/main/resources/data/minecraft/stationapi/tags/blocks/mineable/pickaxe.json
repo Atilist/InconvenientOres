@@ -5,6 +5,7 @@
     "inconvenientores:rotating_ore",
     "inconvenientores:loud_ore",
     "inconvenientores:wind_bag",
-    "inconvenientores:fake_diamond_ore"
+    "inconvenientores:fake_diamond_ore",
+    "inconvenientores:garbage_ore"
   ]
 }
