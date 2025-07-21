@@ -1,19 +1,19 @@
 package io.github.atilist.inconvenientores.block;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.world.World;
 import net.modificationstation.stationapi.api.registry.ItemRegistry;
 import net.modificationstation.stationapi.api.util.Identifier;
 
-public class FakeDiamondOreBlock extends LazyBlockTemplate {
+public class RockDirtBlock extends LazyBlockTemplate {
 
     private Identifier dropId;
 
-    public FakeDiamondOreBlock(Identifier identifier, Material material) {
-        super(identifier, material, 2.0F, Block.STONE_SOUND_GROUP);
+    public RockDirtBlock(Identifier identifier, Material material, float hardness, BlockSoundGroup blockSoundGroup) {
+        super(identifier, material, hardness, blockSoundGroup);
     }
 
     public void specifyCustomDrop(Identifier dropID) {

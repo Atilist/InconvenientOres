@@ -23,6 +23,7 @@ public class TextureListener {
         BlockListener.milkOre.setTexture(getTextureIndex("block/milkOre"));
         BlockListener.fakeDiamondOre.setTexture(getTextureIndex("block/fakeDiamondOre"));
         BlockListener.garbageOre.setTexture(getTextureIndex("block/garbageOre"));
+        BlockListener.rockDirt.setTexture(getTextureIndex("block/rockDirt"));
 
         ItemListener.fakeDiamond.setTexture(Identifier.of(NAMESPACE, "item/fakeDiamond"));
         ItemListener.garbage.setTexture(Identifier.of(NAMESPACE, "item/garbage"));

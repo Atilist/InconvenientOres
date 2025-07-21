@@ -2,8 +2,10 @@ package io.github.atilist.inconvenientores.events.init;
 
 import io.github.atilist.inconvenientores.item.LazyItemTemplate;
 import net.mine_diver.unsafeevents.listener.EventListener;
+import net.minecraft.block.Block;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
 import net.modificationstation.stationapi.api.mod.entrypoint.Entrypoint;
+import net.modificationstation.stationapi.api.registry.BlockRegistry;
 import net.modificationstation.stationapi.api.util.Identifier;
 import net.modificationstation.stationapi.api.util.Namespace;
 
@@ -21,5 +23,6 @@ public class ItemListener {
         garbage = new LazyItemTemplate(Identifier.of(NAMESPACE, "garbage"));
 
         BlockListener.fakeDiamondOre.specifyCustomDrop(NAMESPACE.id("fake_diamond"));
+        BlockListener.rockDirt.specifyCustomDrop(BlockRegistry.INSTANCE.getId(Block.COBBLESTONE));
     }
 }

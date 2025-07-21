@@ -81,5 +81,12 @@ public class ChunkListener {
             int z = event.z + random.nextInt(16) + 8;
             (new OreFeature(BlockListener.garbageOre.id, 8)).generate(world, random, x, y, z);
         }
+
+        for (int i = 0; i < 4; i++) {
+            int x = event.x + random.nextInt(16) + 8;
+            int y = random.nextInt(128);
+            int z = event.z + random.nextInt(16) + 8;
+            (new OreFeature(BlockListener.rockDirt.id, 8)).generate(world, random, x, y, z);
+        }
     }
 }

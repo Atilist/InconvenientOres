@@ -2,6 +2,7 @@ package io.github.atilist.inconvenientores.events.init;
 
 import io.github.atilist.inconvenientores.block.*;
 import net.mine_diver.unsafeevents.listener.EventListener;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.modificationstation.stationapi.api.event.registry.BlockRegistryEvent;
 import net.modificationstation.stationapi.api.mod.entrypoint.Entrypoint;
@@ -21,6 +22,7 @@ public class BlockListener {
     public static MilkOreBlock milkOre;
     public static FakeDiamondOreBlock fakeDiamondOre;
     public static GarbageOreBlock garbageOre;
+    public static RockDirtBlock rockDirt;
 
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
@@ -33,5 +35,6 @@ public class BlockListener {
         milkOre = new MilkOreBlock(Identifier.of(NAMESPACE, "milk_ore"), Material.STONE);
         fakeDiamondOre = new FakeDiamondOreBlock(Identifier.of(NAMESPACE, "fake_diamond_ore"), Material.STONE);
         garbageOre = new GarbageOreBlock(Identifier.of(NAMESPACE, "garbage_ore"), Material.STONE);
+        rockDirt = new RockDirtBlock(Identifier.of(NAMESPACE, "rock_dirt"), Material.STONE, 5.0F, Block.GRAVEL_SOUND_GROUP);
     }
 }
