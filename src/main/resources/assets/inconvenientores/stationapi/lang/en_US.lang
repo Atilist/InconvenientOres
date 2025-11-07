@@ -12,8 +12,13 @@ tile.@.rock_dirt.name=Rock Dirt
 
 tile.@.softened_milk_ore.name=Softened Milk Ore
 
+tile.@.soaked_milk_stone_crate.name=Soaked Milk Stone Crate
+tile.@.rocky_cheese_crate.name=Rocky Cheese Crate
+
 
 item.@.fake_diamond.name=Fake Diamond
 item.@.garbage.name=Garbage
 item.@.milk_stone.name=Milk Stone
 item.@.falsifier.name=Falsifier
+item.@.inconvenient_crate.name=Inconvenient Crate
+item.@.rocky_cheese.name=Rocky Cheese

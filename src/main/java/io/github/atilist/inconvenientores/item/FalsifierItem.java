@@ -10,6 +10,7 @@ public class FalsifierItem extends LazyItemTemplate {
     public FalsifierItem(Identifier identifier) {
         super(identifier);
         setMaxDamage(1000);
+        setMaxCount(1);
     }
 
     @Override

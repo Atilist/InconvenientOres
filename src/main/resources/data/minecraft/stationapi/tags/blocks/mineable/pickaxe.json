@@ -6,6 +6,8 @@
     "inconvenientores:loud_ore",
     "inconvenientores:wind_bag",
     "inconvenientores:fake_diamond_ore",
-    "inconvenientores:garbage_ore"
+    "inconvenientores:garbage_ore",
+    "inconvenientores:soaked_milk_stone_crate",
+    "inconvenientores:rocky_cheese_crate"
   ]
 }

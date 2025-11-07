@@ -28,6 +28,10 @@ public class BlockListener {
     // Modified ores
     public static SoftenedMilkOreBlock softenedMilkOre;
 
+    // Doohickeys
+    public static SoakedMilkStoneCrateBlock soakedMilkStoneCrate;
+    public static RockyCheeseCrateBlock rockyCheeseCrate;
+
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
         // Natural ores
@@ -44,5 +48,9 @@ public class BlockListener {
 
         // Modified ores
         softenedMilkOre = new SoftenedMilkOreBlock(Identifier.of(NAMESPACE, "softened_milk_ore"), Material.STONE);
+
+        // Doohickeys
+        soakedMilkStoneCrate = new SoakedMilkStoneCrateBlock(Identifier.of(NAMESPACE, "soaked_milk_stone_crate"), Material.STONE, 2.0F, Block.STONE_SOUND_GROUP);
+        rockyCheeseCrate = new RockyCheeseCrateBlock(Identifier.of(NAMESPACE, "rocky_cheese_crate"), Material.STONE, 2.0F, Block.STONE_SOUND_GROUP);
     }
 }
