@@ -33,6 +33,7 @@ public class TextureListener {
         ItemListener.fakeDiamond.setTexture(Identifier.of(NAMESPACE, "item/fakeDiamond"));
         ItemListener.garbage.setTexture(Identifier.of(NAMESPACE, "item/garbage"));
         ItemListener.milkStone.setTexture(Identifier.of(NAMESPACE, "item/milkStone"));
+        ItemListener.falsifier.setTexture(Identifier.of(NAMESPACE, "item/falsifier"));
     }
 
     private int getTextureIndex(String s) {
