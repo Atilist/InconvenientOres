@@ -10,5 +10,9 @@ tile.@.fake_diamond_ore.name=Fake Diamond Ore
 tile.@.garbage_ore.name=Garbage Ore
 tile.@.rock_dirt.name=Rock Dirt
 
+tile.@.softened_milk_ore.name=Softened Milk Ore
+
+
 item.@.fake_diamond.name=Fake Diamond
 item.@.garbage.name=Garbage
+item.@.milk_stone.name=Milk Stone

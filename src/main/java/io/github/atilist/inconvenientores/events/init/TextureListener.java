@@ -14,6 +14,8 @@ public class TextureListener {
 
     @EventListener
     public void registerTextures(TextureRegisterEvent event) {
+        /// Blocks
+        // Natural ores
         BlockListener.explosiveOre.setTexture(getTextureIndex("block/explosiveOre"));
         BlockListener.heavenlyOre.setTexture(getTextureIndex("block/heavenlyOre"));
         BlockListener.rotatingOre.setTexture(getTextureIndex("block/rotatingOre"));
@@ -24,9 +26,13 @@ public class TextureListener {
         BlockListener.fakeDiamondOre.setTexture(getTextureIndex("block/fakeDiamondOre"));
         BlockListener.garbageOre.setTexture(getTextureIndex("block/garbageOre"));
         BlockListener.rockDirt.setTexture(getTextureIndex("block/rockDirt"));
+        // Modified ores
+        BlockListener.softenedMilkOre.setTexture(getTextureIndex("block/softenedMilkOre"));
 
+        /// Items
         ItemListener.fakeDiamond.setTexture(Identifier.of(NAMESPACE, "item/fakeDiamond"));
         ItemListener.garbage.setTexture(Identifier.of(NAMESPACE, "item/garbage"));
+        ItemListener.milkStone.setTexture(Identifier.of(NAMESPACE, "item/milkStone"));
     }
 
     private int getTextureIndex(String s) {

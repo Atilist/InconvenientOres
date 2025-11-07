@@ -13,6 +13,7 @@ public class BlockListener {
     @Entrypoint.Namespace
     public static Namespace NAMESPACE;
 
+    // Natural ores
     public static ExplosiveOreBlock explosiveOre;
     public static HeavenlyOreBlock heavenlyOre;
     public static RotatingOreBlock rotatingOre;
@@ -24,8 +25,12 @@ public class BlockListener {
     public static GarbageOreBlock garbageOre;
     public static RockDirtBlock rockDirt;
 
+    // Modified ores
+    public static SoftenedMilkOreBlock softenedMilkOre;
+
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
+        // Natural ores
         explosiveOre = new ExplosiveOreBlock(Identifier.of(NAMESPACE, "explosive_ore"), Material.STONE);
         heavenlyOre = new HeavenlyOreBlock(Identifier.of(NAMESPACE, "heavenly_ore"), Material.STONE);
         rotatingOre = new RotatingOreBlock(Identifier.of(NAMESPACE, "rotating_ore"), Material.STONE);
@@ -36,5 +41,8 @@ public class BlockListener {
         fakeDiamondOre = new FakeDiamondOreBlock(Identifier.of(NAMESPACE, "fake_diamond_ore"), Material.STONE);
         garbageOre = new GarbageOreBlock(Identifier.of(NAMESPACE, "garbage_ore"), Material.STONE);
         rockDirt = new RockDirtBlock(Identifier.of(NAMESPACE, "rock_dirt"), Material.STONE, 5.0F, Block.GRAVEL_SOUND_GROUP);
+
+        // Modified ores
+        softenedMilkOre = new SoftenedMilkOreBlock(Identifier.of(NAMESPACE, "softened_milk_ore"), Material.STONE);
     }
 }
