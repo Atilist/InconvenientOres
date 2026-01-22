@@ -12,6 +12,7 @@ import net.modificationstation.stationapi.api.util.Identifier;
 import net.modificationstation.stationapi.api.util.Namespace;
 
 public class ItemListener {
+    private static final String GREY = "§7";
 
     public static LazyItemTemplate fakeDiamond;
     public static LazyItemTemplate garbage;
@@ -40,5 +41,11 @@ public class ItemListener {
 
         BlockListener.fakeDiamondOre.specifyCustomDrop(NAMESPACE.id("fake_diamond"));
         BlockListener.rockDirt.specifyCustomDrop(BlockRegistry.INSTANCE.getId(Block.COBBLESTONE));
+
+        falsifier.addTooltip(GREY + "Use on ores to soften them up");
+        rockyCheese.addTooltip(GREY + "Technically edible");
+        consolidator.addTooltip(GREY + "Prevents heaven related accidents");
+        stuff.addTooltip(GREY + "Highly enriched garbage");
+        garbageBacteria.addTooltip(GREY + "Lives in infested garbage");
     }
 }

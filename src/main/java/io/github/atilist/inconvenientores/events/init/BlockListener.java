@@ -12,6 +12,7 @@ import net.modificationstation.stationapi.api.util.Namespace;
 public class BlockListener {
     @Entrypoint.Namespace
     public static Namespace NAMESPACE;
+    private static final String GREY = "§7";
 
     // Natural ores
     public static ExplosiveOreBlock explosiveOre;
@@ -66,5 +67,11 @@ public class BlockListener {
         garbagePile = new LazyBlockTemplate(Identifier.of(NAMESPACE, "garbage_pile"), Material.WOOD, 2.0F, Block.WOOD_SOUND_GROUP);
         enrichedGarbagePile = new EnrichedGarbagePileBlock(Identifier.of(NAMESPACE, "enriched_garbage_pile"), Material.WOOD, 2.0F, Block.WOOD_SOUND_GROUP);
         stuffPile = new LazyBlockTemplate(Identifier.of(NAMESPACE, "stuff_pile"), Material.WOOD, 2.0F, Block.WOOD_SOUND_GROUP);
+
+        soakedMilkStoneCrate.addTooltip(GREY + "Let it sit for a while in the world");
+        milkOre.addTooltip(GREY + "Must be harvested with a bucket");
+        softenedMilkOre.addTooltip(GREY + "Falsified version. Bucket still needed");
+        cheesyGarbage.addTooltip(GREY + "Place next to water and wait for green");
+        infestedRockDirt.addTooltip(GREY + "Place garbage piles next to it for enrichment");
     }
 }
