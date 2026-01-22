@@ -37,6 +37,7 @@ public class TextureListener {
         BlockListener.infestedRockDirt.setTexture(getTextureIndex("block/infestedRockDirt"));
         BlockListener.garbagePile.setTexture(getTextureIndex("block/garbagePile"));
         BlockListener.enrichedGarbagePile.setTexture(getTextureIndex("block/enrichedGarbagePile"));
+        BlockListener.stuffPile.setTexture(getTextureIndex("block/stuffPile"));
 
         /// Items
         ItemListener.fakeDiamond.setTexture(Identifier.of(NAMESPACE, "item/fakeDiamond"));
@@ -46,6 +47,7 @@ public class TextureListener {
         ItemListener.inconvenientCrate.setTexture(Identifier.of(NAMESPACE, "item/inconvenientCrate"));
         ItemListener.rockyCheese.setTexture(Identifier.of(NAMESPACE, "item/rockyCheese"));
         ItemListener.garbageBacteria.setTexture(Identifier.of(NAMESPACE, "item/garbageBacteria"));
+        ItemListener.stuff.setTexture(Identifier.of(NAMESPACE, "item/stuff"));
     }
 
     private int getTextureIndex(String s) {

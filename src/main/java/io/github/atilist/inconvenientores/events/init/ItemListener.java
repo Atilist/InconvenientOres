@@ -20,6 +20,7 @@ public class ItemListener {
     public static LazyItemTemplate inconvenientCrate;
     public static RockyCheeseItem rockyCheese;
     public static LazyItemTemplate garbageBacteria;
+    public static LazyItemTemplate stuff;
 
     @Entrypoint.Namespace
     public static Namespace NAMESPACE;
@@ -33,6 +34,7 @@ public class ItemListener {
         inconvenientCrate = new LazyItemTemplate(Identifier.of(NAMESPACE, "inconvenient_crate"));
         rockyCheese = new RockyCheeseItem(Identifier.of(NAMESPACE, "rocky_cheese"));
         garbageBacteria = new LazyItemTemplate(Identifier.of(NAMESPACE, "garbage_bacteria"));
+        stuff = new LazyItemTemplate(Identifier.of(NAMESPACE, "stuff"));
 
         BlockListener.fakeDiamondOre.specifyCustomDrop(NAMESPACE.id("fake_diamond"));
         BlockListener.rockDirt.specifyCustomDrop(BlockRegistry.INSTANCE.getId(Block.COBBLESTONE));
