@@ -48,6 +48,7 @@ public class TextureListener {
         ItemListener.rockyCheese.setTexture(Identifier.of(NAMESPACE, "item/rockyCheese"));
         ItemListener.garbageBacteria.setTexture(Identifier.of(NAMESPACE, "item/garbageBacteria"));
         ItemListener.stuff.setTexture(Identifier.of(NAMESPACE, "item/stuff"));
+        ItemListener.consolidator.setTexture(Identifier.of(NAMESPACE, "item/consolidator"));
     }
 
     private int getTextureIndex(String s) {

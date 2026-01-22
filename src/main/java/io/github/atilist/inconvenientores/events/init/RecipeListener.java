@@ -19,6 +19,7 @@ public class RecipeListener {
             CraftingRegistry.addShapedRecipe(new ItemStack(BlockListener.cheesyGarbage, 1), "XXX", "XYX", "XXX", 'X', ItemListener.garbage, 'Y', ItemListener.rockyCheese);
             CraftingRegistry.addShapedRecipe(new ItemStack(BlockListener.garbagePile, 1), "XXX", "XXX", "XXX", 'X', ItemListener.garbage);
             CraftingRegistry.addShapedRecipe(new ItemStack(BlockListener.stuffPile, 1), "XXX", "XXX", "XXX", 'X', ItemListener.stuff);
+            CraftingRegistry.addShapedRecipe(new ItemStack(ItemListener.consolidator, 1), " X ", "YXY", "YYY", 'X', ItemListener.stuff, 'Y', BlockListener.stuffPile);
         } else if (type == RecipeRegisterEvent.Vanilla.CRAFTING_SHAPELESS.type()) {
             CraftingRegistry.addShapelessRecipe(new ItemStack(BlockListener.soakedMilkStoneCrate, 1), new ItemStack(ItemListener.inconvenientCrate), new ItemStack(ItemListener.milkStone), new ItemStack(Item.MILK_BUCKET));
             CraftingRegistry.addShapelessRecipe(new ItemStack(BlockListener.infestedRockDirt, 1), new ItemStack(ItemListener.garbageBacteria), new ItemStack(BlockListener.softenedRockDirt));

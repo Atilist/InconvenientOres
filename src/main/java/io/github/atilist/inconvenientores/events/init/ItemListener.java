@@ -21,6 +21,7 @@ public class ItemListener {
     public static RockyCheeseItem rockyCheese;
     public static LazyItemTemplate garbageBacteria;
     public static LazyItemTemplate stuff;
+    public static LazyItemTemplate consolidator;
 
     @Entrypoint.Namespace
     public static Namespace NAMESPACE;
@@ -35,6 +36,7 @@ public class ItemListener {
         rockyCheese = new RockyCheeseItem(Identifier.of(NAMESPACE, "rocky_cheese"));
         garbageBacteria = new LazyItemTemplate(Identifier.of(NAMESPACE, "garbage_bacteria"));
         stuff = new LazyItemTemplate(Identifier.of(NAMESPACE, "stuff"));
+        consolidator = new LazyItemTemplate(Identifier.of(NAMESPACE, "consolidator"));
 
         BlockListener.fakeDiamondOre.specifyCustomDrop(NAMESPACE.id("fake_diamond"));
         BlockListener.rockDirt.specifyCustomDrop(BlockRegistry.INSTANCE.getId(Block.COBBLESTONE));
