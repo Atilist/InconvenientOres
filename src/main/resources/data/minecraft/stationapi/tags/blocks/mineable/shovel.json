@@ -1,5 +1,7 @@
 {
   "values": [
-    "inconvenientores:rock_dirt"
+    "inconvenientores:rock_dirt",
+    "inconvenientores:softened_rock_dirt",
+    "inconvenientores:infested_rock_dirt"
   ]
 }

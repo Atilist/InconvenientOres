@@ -28,9 +28,13 @@ public class TextureListener {
         BlockListener.rockDirt.setTexture(getTextureIndex("block/rockDirt"));
         // Modified ores
         BlockListener.softenedMilkOre.setTexture(getTextureIndex("block/softenedMilkOre"));
+        BlockListener.softenedRockDirt.setTexture(getTextureIndex("block/softenedRockDirt"));
         // Doohickeys
         BlockListener.soakedMilkStoneCrate.setTexture(getTextureIndex("block/soakedMilkStoneCrate"));
         BlockListener.rockyCheeseCrate.setTexture(getTextureIndex("block/rockyCheeseCrate"));
+        BlockListener.cheesyGarbage.setTexture(getTextureIndex("block/cheesyGarbage"));
+        BlockListener.infestedGarbage.setTexture(getTextureIndex("block/infestedGarbage"));
+        BlockListener.infestedRockDirt.setTexture(getTextureIndex("block/infestedRockDirt"));
 
         /// Items
         ItemListener.fakeDiamond.setTexture(Identifier.of(NAMESPACE, "item/fakeDiamond"));
@@ -39,6 +43,7 @@ public class TextureListener {
         ItemListener.falsifier.setTexture(Identifier.of(NAMESPACE, "item/falsifier"));
         ItemListener.inconvenientCrate.setTexture(Identifier.of(NAMESPACE, "item/inconvenientCrate"));
         ItemListener.rockyCheese.setTexture(Identifier.of(NAMESPACE, "item/rockyCheese"));
+        ItemListener.garbageBacteria.setTexture(Identifier.of(NAMESPACE, "item/garbageBacteria"));
     }
 
     private int getTextureIndex(String s) {

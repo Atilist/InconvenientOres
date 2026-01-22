@@ -11,9 +11,13 @@ tile.@.garbage_ore.name=Garbage Ore
 tile.@.rock_dirt.name=Rock Dirt
 
 tile.@.softened_milk_ore.name=Softened Milk Ore
+tile.@.softened_rock_dirt.name=Softened Rock Dirt
 
 tile.@.soaked_milk_stone_crate.name=Soaked Milk Stone Crate
 tile.@.rocky_cheese_crate.name=Rocky Cheese Crate
+tile.@.cheesy_garbage.name=Cheesy Garbage
+tile.@.infested_garbage.name=Infested Garbage
+tile.@.infested_rock_dirt.name=Infested Rock Dirt
 
 
 item.@.fake_diamond.name=Fake Diamond
@@ -22,3 +26,4 @@ item.@.milk_stone.name=Milk Stone
 item.@.falsifier.name=Falsifier
 item.@.inconvenient_crate.name=Inconvenient Crate
 item.@.rocky_cheese.name=Rocky Cheese
+item.@.garbage_bacteria.name=Garbage Bacteria

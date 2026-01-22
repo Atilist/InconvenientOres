@@ -27,10 +27,14 @@ public class BlockListener {
 
     // Modified ores
     public static SoftenedMilkOreBlock softenedMilkOre;
+    public static LazyBlockTemplate softenedRockDirt;
 
     // Doohickeys
     public static SoakedMilkStoneCrateBlock soakedMilkStoneCrate;
     public static RockyCheeseCrateBlock rockyCheeseCrate;
+    public static CheesyGarbageBlock cheesyGarbage;
+    public static InfestedGarbageBlock infestedGarbage;
+    public static InfestedRockDirtBlock infestedRockDirt;
 
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
@@ -48,9 +52,13 @@ public class BlockListener {
 
         // Modified ores
         softenedMilkOre = new SoftenedMilkOreBlock(Identifier.of(NAMESPACE, "softened_milk_ore"), Material.STONE);
+        softenedRockDirt = new LazyBlockTemplate(Identifier.of(NAMESPACE, "softened_rock_dirt"), Material.STONE, 5.0F, Block.GRAVEL_SOUND_GROUP);
 
         // Doohickeys
         soakedMilkStoneCrate = new SoakedMilkStoneCrateBlock(Identifier.of(NAMESPACE, "soaked_milk_stone_crate"), Material.STONE, 2.0F, Block.STONE_SOUND_GROUP);
         rockyCheeseCrate = new RockyCheeseCrateBlock(Identifier.of(NAMESPACE, "rocky_cheese_crate"), Material.STONE, 2.0F, Block.STONE_SOUND_GROUP);
+        cheesyGarbage = new CheesyGarbageBlock(Identifier.of(NAMESPACE, "cheesy_garbage"), Material.WOOD, 2.0F, Block.WOOD_SOUND_GROUP);
+        infestedGarbage = new InfestedGarbageBlock(Identifier.of(NAMESPACE, "infested_garbage"), Material.WOOD, 2.0F, Block.WOOD_SOUND_GROUP);
+        infestedRockDirt = new InfestedRockDirtBlock(Identifier.of(NAMESPACE, "infested_rock_dirt"), Material.STONE, 5.0F, Block.GRAVEL_SOUND_GROUP);
     }
 }

@@ -1,5 +1,7 @@
 {
   "values": [
-    "inconvenientores:wooden_stone"
+    "inconvenientores:wooden_stone",
+    "inconvenientores:cheesy_garbage",
+    "inconvenientores:infested_garbage"
   ]
 }

@@ -19,6 +19,10 @@ public class FalsifierItem extends LazyItemTemplate {
             world.setBlock(x, y, z, BlockListener.softenedMilkOre.id);
             stack.damage(1, user);
             return true;
+        } else if (world.getBlockId(x, y, z) == BlockListener.rockDirt.id) {
+            world.setBlock(x, y, z, BlockListener.softenedRockDirt.id);
+            stack.damage(1, user);
+            return true;
         }
         return false;
     }
