@@ -35,6 +35,8 @@ public class BlockListener {
     public static CheesyGarbageBlock cheesyGarbage;
     public static InfestedGarbageBlock infestedGarbage;
     public static InfestedRockDirtBlock infestedRockDirt;
+    public static LazyBlockTemplate garbagePile;
+    public static EnrichedGarbagePileBlock enrichedGarbagePile;
 
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
@@ -60,5 +62,7 @@ public class BlockListener {
         cheesyGarbage = new CheesyGarbageBlock(Identifier.of(NAMESPACE, "cheesy_garbage"), Material.WOOD, 2.0F, Block.WOOD_SOUND_GROUP);
         infestedGarbage = new InfestedGarbageBlock(Identifier.of(NAMESPACE, "infested_garbage"), Material.WOOD, 2.0F, Block.WOOD_SOUND_GROUP);
         infestedRockDirt = new InfestedRockDirtBlock(Identifier.of(NAMESPACE, "infested_rock_dirt"), Material.STONE, 5.0F, Block.GRAVEL_SOUND_GROUP);
+        garbagePile = new LazyBlockTemplate(Identifier.of(NAMESPACE, "garbage_pile"), Material.WOOD, 2.0F, Block.WOOD_SOUND_GROUP);
+        enrichedGarbagePile = new EnrichedGarbagePileBlock(Identifier.of(NAMESPACE, "enriched_garbage_pile"), Material.WOOD, 2.0F, Block.WOOD_SOUND_GROUP);
     }
 }

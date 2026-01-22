@@ -35,6 +35,8 @@ public class TextureListener {
         BlockListener.cheesyGarbage.setTexture(getTextureIndex("block/cheesyGarbage"));
         BlockListener.infestedGarbage.setTexture(getTextureIndex("block/infestedGarbage"));
         BlockListener.infestedRockDirt.setTexture(getTextureIndex("block/infestedRockDirt"));
+        BlockListener.garbagePile.setTexture(getTextureIndex("block/garbagePile"));
+        BlockListener.enrichedGarbagePile.setTexture(getTextureIndex("block/enrichedGarbagePile"));
 
         /// Items
         ItemListener.fakeDiamond.setTexture(Identifier.of(NAMESPACE, "item/fakeDiamond"));

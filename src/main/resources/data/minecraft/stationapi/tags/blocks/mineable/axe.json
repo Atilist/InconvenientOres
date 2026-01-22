@@ -2,6 +2,8 @@
   "values": [
     "inconvenientores:wooden_stone",
     "inconvenientores:cheesy_garbage",
-    "inconvenientores:infested_garbage"
+    "inconvenientores:infested_garbage",
+    "inconvenientores:garbage_pile",
+    "inconvenientores:enriched_garbage_pile"
   ]
 }

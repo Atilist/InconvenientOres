@@ -18,6 +18,8 @@ tile.@.rocky_cheese_crate.name=Rocky Cheese Crate
 tile.@.cheesy_garbage.name=Cheesy Garbage
 tile.@.infested_garbage.name=Infested Garbage
 tile.@.infested_rock_dirt.name=Infested Rock Dirt
+tile.@.garbage_pile.name=Garbage Pile
+tile.@.enriched_garbage_pile.name=Enriched Garbage Pile
 
 
 item.@.fake_diamond.name=Fake Diamond
